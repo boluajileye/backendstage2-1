@@ -3,8 +3,8 @@ header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json;");
 
     
-    $bolu = file_get_contents('php://input');
-    $data = json_decode($bolu, true);
+    $atralfox = file_get_contents('php://input');
+    $data = json_decode($astralfox, true);
 
     $operation = $data['operation_type'];
     $x = $data['x'];
@@ -29,13 +29,13 @@ header("Content-Type: application/json;");
 }
 
 
-    $ajileyebolu = [
-  "slackUsername"=>"ajileyebolu",
+    $olusameze = [
+  "slackUsername"=>"olusameze",
    "result"=> $result,
   "operation_type"=> $operation
        ];
 
 
- echo json_encode($ajileyebolu);
+ echo json_encode($olusameze);
 ?>
 
